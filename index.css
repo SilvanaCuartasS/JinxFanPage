@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgb(187,88,255);
+    background: linear-gradient(180deg, rgba(187,88,255,1) 0%, rgba(17,34,114,1) 27%, rgba(73,36,99,1) 72%);
+}
+
+
+.imgFondo {
+    background: url('./recursos/Group10.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav .logo img {
+    height: 40%;
+    padding: 1rem;
+}
+
+nav .secciones a {
+    font-family: "Raleway", serif;
+    font-style: light;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.main-doodles {
+    text-align: center;
+    justify-content: center;
+}
+
+nav .ingresar button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+.imgFondo {
+    background: url('./image/Group\ 10.png') no-repeat center center/cover;
+}
+
+.main-title {
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.main-title h1 {
+    font-size: 10rem;
+    text-shadow: 2px 2px 10px #000;
+    color: white;
+    font-family: "Lacquer", serif;
+    font-weight: 400;
+}
+
+
+.lore-section {
+    position: relative;
+    height: 80svh;
+    background: url('./image/Group\ 6.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; 
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+}
+
+.lore-content {
+    max-width: 800px;
+    z-index: 10;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 4rem; /* Espaciado opcional para separar del borde izquierdo */
+}
+
+.lore-content h1 {
+    font-family: "Lacquer", serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.lore-content .subtitle {
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-style: italic;
+    font-family: "Raleway", serif;
+}
+
+.lore-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Raleway", serif;
+}
+
+.read-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.character-image {
+    position: absolute;
+    bottom: 5%; /* Ajusta la posición de la imagen */
+    left: 26%; /* Ajusta la separación desde la derecha */
+    max-height: 100%; /* Asegura que no exceda la pantalla */
+    z-index: 5; /* Por debajo del texto, pero por encima del fondo */
+    pointer-events: none; /* La imagen no interfiere con los clics */
+    transform: scale(1.2);
+}
+
+
+.skins-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-image: url(image/Group\ 9.png);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skins-section h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: "Lacquer", serif;
+    font-weight: 400;
+}
+
+.carrusel {
+    display: flex; 
+    justify-content: center; 
+    transform: rotateX(0); 
+    box-shadow: #000;
+    gap: 2rem;
+}
+
+.carrusel img {
+    width: 15rem; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.carrusel img:hover {
+    transform: scale(1.1); 
+}
+
+.JinxSkin1 {
+    margin-left: 10rem;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    height: 2.5rem;
+    transform: scale(3);
+    margin-top: 1rem;
+}
+
+.pFooter {
+    font-family: "Raleway", serif;
+    font-weight: 300; 
+    color: white;
+    max-width: 45rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+
+
+.footer-links {
+    font-family: "Raleway", serif;
+    font-style: light;
+    display: flex; 
+    justify-content: center;
+    gap: 2rem; 
+    font-size: 0.8rem;
+}
+
+.footer-links h4 {
+    margin: 0; 
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
