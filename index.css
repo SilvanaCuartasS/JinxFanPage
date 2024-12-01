@@ -9,15 +9,6 @@ body {
     background: linear-gradient(180deg, rgba(187,88,255,1) 0%, rgba(17,34,114,1) 27%, rgba(73,36,99,1) 72%);
 }
 
-
-.imgFondo {
-    background: url('./recursos/Group10.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -41,11 +32,6 @@ nav .secciones a {
     padding: 1rem;
 }
 
-.main-doodles {
-    text-align: center;
-    justify-content: center;
-}
-
 nav .ingresar button {
     background-color: transparent;
     color: white;
@@ -59,12 +45,19 @@ nav .ingresar button {
 }
 
 .imgFondo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: url('./image/Group\ 10.png') no-repeat center center/cover;
 }
 
 .main-title {
     text-align: center;
     justify-content: center;
+    position: relative; 
+    text-align: center;
+    z-index: 2; 
     
 }
 
@@ -74,6 +67,24 @@ nav .ingresar button {
     color: white;
     font-family: "Lacquer", serif;
     font-weight: 400;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 16.5rem;
+}
+
+.main-doodles {
+    position: absolute; 
+    bottom: -5%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1;
+}
+
+.main-doodles img {
+    max-width: 100%; 
+    height: auto; 
+    transform: scale(1.5);
+    margin-bottom: 15rem;
 }
 
 
@@ -150,7 +161,7 @@ nav .ingresar button {
 .skins-section {
     text-align: center;
     padding: 5rem 2rem;
-    background-image: url(image/Group\ 9.png);
+    background-image: url('./image/Group\ 9.png');
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -230,3 +241,111 @@ footer img {
     cursor: pointer;
 }
 
+/* Animación para entrar */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación para salir */
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }
+  
+  /* Estado inicial (oculto) */
+  .animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Cuando el elemento está visible */
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  /* Cuando el elemento sale del viewport */
+  .animate-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeOutDown 0.5s forwards;
+  }
+
+  .animate-lore {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-lore-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.animate-lore-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeOutDown 0.5s forwards;
+}
+
+/* Estado inicial (imagen oculta) */
+.animate-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Cuando la imagen está visible */
+.animate-image-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s forwards; /* Animación al aparecer */
+}
+
+/* Cuando la imagen está fuera del viewport */
+.animate-image-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeOutDown 0.5s forwards; /* Animación al desaparecer */
+}
+
+/* Animaciones con keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+  
