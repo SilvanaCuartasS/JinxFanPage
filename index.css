@@ -465,3 +465,118 @@ audio {
     display: none;
 }
   
+
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .logo {
+        margin: 0;
+        scale: 1.5;
+    }
+
+    .secciones {
+        display: none; 
+    }
+
+    .ingresar {
+        margin: 0;
+    }
+
+    .ingresar button {
+        margin-left: auto;
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .transition-section {
+        position: relative;
+        height: 3rem;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    }
+    .main-doodles {
+        display: none; /* Ocultamos la imagen del banner */
+    }
+    
+    .main-title h1 {
+        animation: none; /* Desactivamos la animación del título */
+    }    
+}
+
+
+
+@media (max-width: 768px) {
+    .lore-section {
+        flex-direction: column;
+        padding: 1rem;
+        background-position: top;
+        margin-top: -10rem;
+    }
+
+    .lore-content {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .lore-content h1 {
+        font-size: 1.8rem; /* Reducimos el título */
+        margin-bottom: 0.5rem;
+    }
+
+    .lore-content p {
+        font-size: 0.9rem; /* Reducimos el texto descriptivo */
+        line-height: 1.4rem;
+    }
+
+    .read-more {
+        width: 100%; /* Botón centrado y ancho completo */
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .character-image {
+        display: none; /* Ocultamos la imagen del personaje en pantallas pequeñas */
+    }
+}
+
+
+/* Carrusel */
+@media (max-width: 768px) {
+    .carrusel {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .carrusel a img {
+        width: 18rem; 
+        
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer img {
+        transform: scale(2); 
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-links h4 {
+        display: none;
+    }
+}
