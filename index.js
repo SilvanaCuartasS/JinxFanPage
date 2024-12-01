@@ -32,3 +32,4 @@ const observer = new IntersectionObserver((entries) => {
 elementsToAnimate.forEach((el) => observer.observe(el));
 observer.observe(elementToAnimate);
 observer.observe(imageToAnimate);
+
