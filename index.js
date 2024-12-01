@@ -33,3 +33,14 @@ elementsToAnimate.forEach((el) => observer.observe(el));
 observer.observe(elementToAnimate);
 observer.observe(imageToAnimate);
 
+document.body.addEventListener('click', () => {
+  const audio = document.querySelector('audio');
+  if (audio.paused) {
+      audio.play();
+  }
+});
+
+
+
+
+

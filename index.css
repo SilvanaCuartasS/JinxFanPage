@@ -280,7 +280,7 @@ nav .ingresar button:hover {
 
 .skins-section h1 {
     font-size: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     margin-top: 0.5rem;
     color: white;
     font-family: "Lacquer", serif;
@@ -353,6 +353,7 @@ footer img {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 
 
 @keyframes fadeInUp {
@@ -461,11 +462,6 @@ footer img {
     }
 }
 
-audio {
-    display: none;
-}
-  
-
 
 @media (max-width: 768px) {
     nav {
@@ -502,11 +498,11 @@ audio {
         background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
     }
     .main-doodles {
-        display: none; /* Ocultamos la imagen del banner */
+        display: none; 
     }
     
     .main-title h1 {
-        animation: none; /* Desactivamos la animación del título */
+        animation: none; 
     }    
 }
 
@@ -526,23 +522,23 @@ audio {
     }
 
     .lore-content h1 {
-        font-size: 1.8rem; /* Reducimos el título */
+        font-size: 1.8rem; 
         margin-bottom: 0.5rem;
     }
 
     .lore-content p {
-        font-size: 0.9rem; /* Reducimos el texto descriptivo */
+        font-size: 0.9rem; 
         line-height: 1.4rem;
     }
 
     .read-more {
-        width: 100%; /* Botón centrado y ancho completo */
+        width: 100%; 
         margin-top: 1rem;
         margin-bottom: 10rem;
     }
 
     .character-image {
-        display: none; /* Ocultamos la imagen del personaje en pantallas pequeñas */
+        display: none; 
     }
 }
 
