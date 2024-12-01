@@ -28,7 +28,7 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.2, 
 });
 
-// Asocia el observador a cada elemento
+
 elementsToAnimate.forEach((el) => observer.observe(el));
 observer.observe(elementToAnimate);
 observer.observe(imageToAnimate);
@@ -39,6 +39,11 @@ document.body.addEventListener('click', () => {
       audio.play();
   }
 });
+
+const audio = document.querySelector('audio');
+audio.onerror = () => {
+    console.error('Error al cargar el audio.');
+};
 
 
 
