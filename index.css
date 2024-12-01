@@ -1,9 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Rock Salt", serif;
-    font-family: "Lacquer", serif;
-    font-family: "Raleway", serif;
+    font-family: "Rock Salt", "Lacquer", "Raleway", serif;
 }
 
 body {
